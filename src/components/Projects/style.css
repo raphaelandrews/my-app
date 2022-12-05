@@ -1,0 +1,17 @@
+.projects {
+    padding: 6rem 0 4rem;
+}
+
+.projects__subtitle {
+    font-family: var(--alt-font);
+    font-size: 28px;
+    color: var(--yellow-cp);
+    text-align: center;
+}
+
+.projects__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
