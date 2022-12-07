@@ -13,24 +13,17 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="nav-container">
+            <div className="header__container">
                 <Setting2
                     size="20"
                     color="#d9e3f0"
                     variant="TwoTone"
                 />
-                
-                <nav role="navigation" id="nav" >
-                    <ul role="menu" className={menu ? "nav nav__list navOpen" : "nav nav__list navClose"}>
-                        <li className="nav__item"><a href="#home" role="menuitem" className="nav__link">Home</a></li>
-                        <li className="nav__item"><a href="#about" role="menuitem" className="nav__link">About</a></li>
-                        <li className="nav__item"><a href="#contact" role="menuitem" className="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div className={menu ? "icon iconActive" : "icon"} onClick={ToggleMenu}>
-                    <div className='hamburger' ></div>
-                    <div className='hamburger' ></div>
-                    <div className='hamburger' ></div>
+
+                <div className='header__icons'>
+                    <a href="" className='header__icon'><i className='bx bxl-github'></i></a>
+                    <a href="" className='header__icon'><i className='bx bxl-linkedin' ></i></a>
+                    <a href="" className='header__icon'><i className='bx bxl-gmail' ></i></a>
                 </div>
             </div>
         </header>

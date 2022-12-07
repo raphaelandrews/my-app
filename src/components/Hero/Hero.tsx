@@ -3,24 +3,27 @@ import photo from "../../assets/img/foto-raphael.png";
 
 const Hero = () => {
     return (
-        <section className='hero'>
-            <div className='hero__container'>
-                <a href="#home"
-                    aria-label="Back to home"
-                    className='nav__logo'
-                >
-                    <div className="about__border">
+        <section className="hero">
+            <div className='hero__logo'>
+                <div>
+                    <div className="hero__border">
+                        <img src={photo} alt="Andrews Logo" title="Andrews Logo" className="hero__perfil" />
+                    </div>
+                </div>
+                <div className="hero__name">
+                    <div className="hero__title">Andrews</div>
+                    <div className="hero__subtitle">Developer</div>
+                </div>
+            </div>
+            <p className="hero__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur natus neque doloribus
+            </p>
 
-                        <div className="about__perfil">
-                            <img src={photo} alt="Andrews Logo" title="Andrews Logo"></img>
-                        </div>
-                    </div>
-                    <div className="nav__name">
-                        <div className="nav__title">Raphael Andrews</div>
-                        <span className="nav__slash">|</span>
-                        <div className="nav__subtitle">Web Developer</div>
-                    </div>
-                </a>
+            <div className='hero__btns'>
+                <a href="" className='hero__btn'>Info</a>
+                <a href="" className='hero__btn'>Download CV</a>
+                <a href="" className='hero__btn'>Contact</a>
             </div>
         </section>
     );

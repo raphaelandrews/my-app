@@ -5,7 +5,7 @@ html {
 body {
     font-family: var(--first-font);
     font-weight: var(--font-regular);
-    font-size: var(--normal-font-size);
+    font-size: 16px;
     color: var(--first-color);
     background-color: var(--second-color);
 }
@@ -16,7 +16,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--first);
+    color: var(--first-color);
 }
 
 button {

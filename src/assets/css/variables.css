@@ -15,11 +15,22 @@
     /*========== Colors ==========*/
     /* Amaranth: hsl(354, 84%, 52%); */
 
-
     --first-color: hsl(0, 0%, 100%);
-    --second-color: hsl(216, 8%, 13%);
+    --second-color: hsl(240, 100%, 7%);
+    --second-color-alt: hsl(224, 91%, 13%);
     --third-color: hsl(240, 7%, 6%);
-    --alt-color: hsl(0, 0%, 80%);
+    --fourth-color: var(--pink);
+    --alt-color: hsl(223, 13%, 79%);
+    --purple-pink: linear-gradient(40deg,
+            var(--purple) 0%,
+            var(--pink) 100%);
+
+
+    /*==Sweet==*/
+    --blue-sweet: hsl(228, 28%, 12%);
+
+    --purple: hsl(271, 100%, 50%);
+    --pink: hsl(291, 100%, 50%);
 
     /*========== Font and typography ==========*/
     /*  
@@ -29,8 +40,8 @@
     font-family: 'Nunito', sans-serif; 
     */
 
-    --first-font: 'Poppins', sans-serif;     
-    --second-font: 'Ubuntu', sans-serif;   
+    --first-font: 'Poppins', sans-serif;
+    --second-font: 'Ubuntu', sans-serif;
 
     /*========== Font weight ==========*/
     --font-thin: 100;
@@ -50,5 +61,5 @@
     --z-menu: 100;
 }
 
-/*=============== RESPONSIVE ===============*/
+/*===== RESPONSIVE =====*/
 @media screen and (min-width: 1024px) {}

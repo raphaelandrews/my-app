@@ -1,23 +1,23 @@
-.nav__logo {
-    text-align: center;
+.hero__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.nav__logo:hover .nav__title {
-    opacity: .6;
+.hero__logo:hover .hero__title {
+    color: var(--fourth-color);
 }
 
-.about__border {
+.hero__border {
     position: relative;
     display: grid;
     place-items: center;
-    justify-self: center;
-    width: 80px;
-    height: 80px;
+    width: 84px;
+    height: 84px;
     border-radius: 35%;
-    margin: 0 auto 1em;
 }
 
-.about__border::after {
+.hero__border::after {
     content: '';
     position: absolute;
     top: 0;
@@ -25,44 +25,74 @@
     width: 100%;
     height: 100%;
     border-radius: inherit;
-    background-image: linear-gradient(40deg,
-            #f99b4a,
-            #df376b 74%,
-            #c52d91 0);
-    z-index: -1;
+    background-image: var(--purple-pink);
 }
 
-.about__perfil {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.hero__perfil {
     width: calc(100% - 4px);
-    height: calc(100% - 4px);
     background: linear-gradient(180deg,
             var(--alt-color) 0%,
             var(--alt-color) 100%);
+    border: 4px solid var(--second-color-alt);
     border-radius: inherit;
-    border: 2px solid var(--second-color);
-    margin: 2px;
+    margin: 4px;
     overflow: hidden;
+    z-index: 1;
 }
 
-.nav__name {
+.hero__name {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 1.125rem;
+    margin-left: 1em;
 }
 
-.nav__title,
-.nav__subtitle {
+.hero__title {
     font-weight: 600;
-    width: 145px;
 }
 
-.nav__subtitle {
-    text-align: left;
-}
-
-.nav__slash {
-    margin: 0 .5rem;
+.hero__subtitle {
+    font-size: .75rem;
+    font-weight: 500;
     color: var(--alt-color);
+}
+
+.hero__text {
+    font-size: .875rem;
+    font-weight: 400;
+    margin: 2em auto;
+    color: var(--alt-color);
+}
+
+.hero__btns {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero__btn {
+    display: inline-block;
+    font-size: .75rem;
+    width: 30%;
+    border-radius: .75rem;
+    padding: .75em 0;
+    background-color: var(--second-color-alt);
+    transition: .4s;
+}
+
+.hero__btn:hover {
+    background-color: hsl(228, 28%, 24%);
+    cursor: pointer;
+}
+
+.hero__btn+.hero__btn {
+    margin-left: 5%;
+}
+
+.hero__btn:last-child {
+    background-color: var(--purple);
+}
+
+.hero__btn:last-child:hover {
+    background-color: hsl(271, 100%, 56%);
 }
