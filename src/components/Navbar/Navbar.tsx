@@ -14,16 +14,18 @@ const Navbar = () => {
     return (
         <header>
             <div className="header__container">
-                <Setting2
-                    size="20"
-                    color="#d9e3f0"
-                    variant="TwoTone"
-                />
+                <Setting2 size="20" />
 
                 <div className='header__icons'>
-                    <a href="" className='header__icon'><i className='bx bxl-github'></i></a>
-                    <a href="" className='header__icon'><i className='bx bxl-linkedin' ></i></a>
-                    <a href="" className='header__icon'><i className='bx bxl-gmail' ></i></a>
+                    <a href='https://github.com/raphaelandrews' target="_blank" className='header__icon'>
+                        <i className='bx bxl-github'></i>
+                    </a>
+                    <a href='https://www.linkedin.com/in/raphael-andrews/' target="_blank" className='header__icon'>
+                        <i className='bx bxl-linkedin' ></i>
+                    </a>
+                    <a href="mailto:raphaelandrews95@gmail.com" target="_blank" className='header__icon'>
+                        <i className='bx bxl-gmail' ></i>
+                    </a>
                 </div>
             </div>
         </header>

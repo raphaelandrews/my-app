@@ -1,17 +1,10 @@
-.projects {
-    padding: 6rem 0 4rem;
+.box__img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: .75rem;
+    margin-bottom: 1em;
 }
 
-.projects__subtitle {
-    font-family: var(--alt-font);
-    font-size: 28px;
-    color: var(--yellow-cp);
-    text-align: center;
-}
-
-.projects__title {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 1.5em;
+.box__img:nth-of-type(1) {
+    margin-top: 1em;
 }
