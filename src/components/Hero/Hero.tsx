@@ -19,8 +19,8 @@ const Hero = () => {
                 &#x1F44B; Hello, I'm Raphael and I like to build things on the internet.
             </p>
 
-            <a href="" className='hero__btn'>&#x1F4D1; Download CV</a>
-            <a href="" className='hero__btn'>&#x1F4EB; Contact</a>
+            <a download href="../../assets/pdf/cv-raphael-andrews.pdf" className='hero__btn'>&#x1F4D1; Download CV</a>
+            <a href="mailto:raphaelandrews95@gmail.com" target="_blank" className='hero__btn'>&#x1F4EB; Contact</a>
         </section>
     );
 }
